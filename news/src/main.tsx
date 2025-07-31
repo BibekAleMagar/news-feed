@@ -10,7 +10,7 @@ import { Toaster } from 'sonner'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/news-feed'>
       <QueryClientProvider client={queryClient}>
         <App />
         <Toaster position='top-center' />
