@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/sidebar"
 import { Bandage, Newspaper } from 'lucide-react'
 import { useEffect, useState } from "react"
-import { useLocation } from "react-router-dom"
+import { useLocation, Link } from "react-router-dom"
 
 const items = [
   {
@@ -63,14 +63,14 @@ export const SideBar = () => {
                 return (
                   <SidebarMenuItem key={item.title}>
                     <SidebarMenuButton asChild>
-                      <a
-                        href={item.url}
+                      <Link
+                        to={item.url}
                         className={` ${isActive ? 'bg-black text-white' : 'hover:bg-gray-100'
                         }`}
                       >
                         <item.icon />
                         <span className="">{item.title}</span>
-                      </a>
+                      </Link>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
                 );
