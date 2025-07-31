@@ -4,11 +4,9 @@ import dummy from '../assets/dummy.png'
 import {
   Card,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Button } from "./ui/button";
 
 export const MixList = () => {
     const { 

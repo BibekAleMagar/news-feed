@@ -1,11 +1,9 @@
 export interface NewsApiResponse {
-  title: ReactNode;
   author: any;
   publishedAt: string | number | Date;
   urlToImage: string | undefined;
   description: any;
   content: any;
-  url: To;
   status: string;
   totalResults: number;
   articles: Article[];
