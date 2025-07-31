@@ -12,7 +12,7 @@ function App() {
     <>
       <Routes>
           <Route path='/' element={<Login />} />
-          <Route path='/home' element={<Protect><LayOut /></Protect>}>
+          <Route path='home' element={<Protect><LayOut /></Protect>}>
               <Route index element={<NewList />} />
               <Route path='article/:id' element={<NewsDetails />} />
               <Route path='mix-news' element={<MixList />} />
