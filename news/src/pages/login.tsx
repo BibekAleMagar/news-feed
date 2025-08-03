@@ -113,7 +113,7 @@ export const Login = () => {
                                         
                                     }} />
                                         <div className='absolute right-2 top-1' onClick={()=> setShowPassword(!showPassword)}>
-                                            {showPassword ? <EyeOff /> : <Eye /> }
+                                            {showPassword ? <EyeOff className='cursor-pointer' /> : <Eye className='cursor-pointer' /> }
                                         </div>
                                     </div>
                                 </FormControl>
